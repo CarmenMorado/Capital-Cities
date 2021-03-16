@@ -55,12 +55,17 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         guard let capital = view.annotation as? Capital else { return }
-        let placeName = capital.title
-        let placeInfo = capital.info
-
-        let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
-        present(ac, animated: true)
+        
+        let capitalTitle = capital.title
+        
+        if let webViewController = storyboard?.instantiateViewController(withIdentifier: "WebView") as? DetailViewController {
+            if let title = capitalTitle {
+                webViewController.title = title
+                let txtAppend = (title).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+                webViewController.selectedWebsite = "en.wikipedia.org/wiki/\(txtAppend!)"
+                navigationController?.pushViewController(webViewController, animated: true)
+            }
+        }
     }
     
     @objc func chooseMapType() {
@@ -74,11 +79,19 @@ class ViewController: UIViewController, MKMapViewDelegate {
             mapTypeAC.addAction(UIAlertAction(title: "Satellite", style: .default, handler: { [weak self] _ in
                 self?.mapView.mapType = .satellite
             }))
+            mapTypeAC.addAction(UIAlertAction(title: "HybridFlyover", style: .default, handler: { [weak self] _ in
+                self?.mapView.mapType = .hybridFlyover
+            }))
+            mapTypeAC.addAction(UIAlertAction(title: "MutedStandard", style: .default, handler: { [weak self] _ in
+                self?.mapView.mapType = .mutedStandard
+            }))
+            mapTypeAC.addAction(UIAlertAction(title: "SatelliteFlyover", style: .default, handler: { [weak self] _ in
+                self?.mapView.mapType = .satelliteFlyover
+            }))
             
             present(mapTypeAC, animated: true)
-        }
+    }
 
-
-
+    
 }
 

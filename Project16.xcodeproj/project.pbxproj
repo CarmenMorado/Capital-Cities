@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73219DC125FBC2AD001CD4B4 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73219DC025FBC2AD001CD4B4 /* Capital.swift */; };
+		73E5BCAB25FFE54D00FB3128 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E5BCAA25FFE54D00FB3128 /* DetailViewController.swift */; };
 		73EB121025FBBAAA00F2C0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EB120F25FBBAAA00F2C0EA /* AppDelegate.swift */; };
 		73EB121225FBBAAA00F2C0EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EB121125FBBAAA00F2C0EA /* SceneDelegate.swift */; };
 		73EB121425FBBAAA00F2C0EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EB121325FBBAAA00F2C0EA /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		73219DC025FBC2AD001CD4B4 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		73E5BCAA25FFE54D00FB3128 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		73EB120C25FBBAAA00F2C0EA /* Project16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EB120F25FBBAAA00F2C0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73EB121125FBBAAA00F2C0EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				73EB120F25FBBAAA00F2C0EA /* AppDelegate.swift */,
 				73EB121125FBBAAA00F2C0EA /* SceneDelegate.swift */,
 				73EB121325FBBAAA00F2C0EA /* ViewController.swift */,
+				73E5BCAA25FFE54D00FB3128 /* DetailViewController.swift */,
 				73EB121525FBBAAA00F2C0EA /* Main.storyboard */,
 				73219DC025FBC2AD001CD4B4 /* Capital.swift */,
 				73EB121825FBBAB000F2C0EA /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				73EB121425FBBAAA00F2C0EA /* ViewController.swift in Sources */,
 				73EB121025FBBAAA00F2C0EA /* AppDelegate.swift in Sources */,
+				73E5BCAB25FFE54D00FB3128 /* DetailViewController.swift in Sources */,
 				73219DC125FBC2AD001CD4B4 /* Capital.swift in Sources */,
 				73EB121225FBBAAA00F2C0EA /* SceneDelegate.swift in Sources */,
 			);
